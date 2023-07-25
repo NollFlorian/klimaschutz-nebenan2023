@@ -121,11 +121,11 @@ with st.expander("💬 Kommentare anzeigen"):
 
     # Insert comment
 
-    st.write("**Was wäre Ihr Wunsch, um die Fläche um die Velobox herum zu verschönern :**")
+    st.write("**Was ist Deine Idee, um die Fläche um die Velobox herum zu verschönern :**")
     form = st.form("comment")
     name = form.text_input("Name")
-    comment = form.text_area("Wunsch")
-    submit = form.form_submit_button("Wunsch hinzufügen")
+    comment = form.text_area("Meine Idee")
+    submit = form.form_submit_button("Idee hinzufügen")
 
     if submit:
         date = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
